@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<title>КонсультВлад — Прототип</title>
+<style>
+section[data-screen] { display: none; }
+section[data-screen]:target { display: block; }
+body:not(:has(:target)) #home { display: block; }
+body { font-family: Arial, sans-serif; margin: 20px; line-height: 1.15; }
+</style>
+</head>
+<body>
+<h1>КонсультВлад</h1>
+
+<section id="home" data-screen>
+<h2>Головна</h2>
+<p>Сервіс запису на консультації.</p>
+<a href="#schedule">Перейти до розкладу</a>
+</section>
+
+<section id="schedule" data-screen>
+<h2>Розклад викладачів</h2>
+<p>Оберіть зручний слот.</p>
+<a href="#slot">Обрати слот 14:00</a>
+</section>
+
+<section id="slot" data-screen>
+<h2>Форма бронювання</h2>
+<form>
+<label for="student-name">Ваше ім'я:</label>
+<input type="text" id="student-name" aria-label="Ваше ім'я">
+</form>
+<a href="#done">Підтвердити запис</a>
+</section>
+
+<section id="done" data-screen data-end>
+<h2>Слот успішно заброньовано!</h2>
+<a href="#home">На головну</a>
+</section>
+
+</body>
+</html>

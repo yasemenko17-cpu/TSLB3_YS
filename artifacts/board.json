@@ -1,7 +1,14 @@
 {
-  "project_url": "<ЗАПОВНІТЬ адреса проєкту на github.com>",
-  "steps": ["<ЗАПОВНІТЬ крок 1>", "<ЗАПОВНІТЬ крок 2>", "<ЗАПОВНІТЬ крок 3>"],
+  "steps": ["Вхід", "Розклад", "Слот", "Готово"],
   "items": [
-    {"id": "US-01", "title": "US-01 <ЗАПОВНІТЬ назва історії>", "step": "<ЗАПОВНІТЬ крок 1>", "size": 3, "value": 8, "depends_on": [], "status": "Беклог", "iteration": "Ітерація 1"}
-  ]
+    {"id": "US-01", "title": "US-01 Авторизація студента", "step": "Вхід", "size": 1, "value": 8, "depends_on": [], "status": "Done", "iteration": "Ітерація 1"},
+    {"id": "US-02", "title": "US-02 Перегляд списку викладачів", "step": "Розклад", "size": 1, "value": 9, "depends_on": ["US-01"], "status": "Done", "iteration": "Ітерація 2"},
+    {"id": "US-03", "title": "US-03 Вибір вільного слота часу", "step": "Слот", "size": 1, "value": 10, "depends_on": ["US-02"], "status": "In Progress", "iteration": "Ітерація 3"},
+    {"id": "US-04", "title": "US-04 Підтвердження бронювання", "step": "Готово", "size": 1, "value": 7, "depends_on": ["US-03"], "status": "Todo", "iteration": "Ітерація 4"},
+    {"id": "US-05", "title": "US-05 Перегляд власних записів", "step": "Готово", "size": 1, "value": 6, "depends_on": ["US-04"], "status": "Todo", "iteration": "Ітерація 5"},
+    {"id": "US-06", "title": "US-06 Скасування запису", "step": "Слот", "size": 1, "value": 5, "depends_on": ["US-03"], "status": "Todo", "iteration": "Пізніше"},
+    {"id": "US-07", "title": "US-07 Фільтрація викладачів за кафедрою", "step": "Розклад", "size": 2, "value": 4, "depends_on": ["US-02"], "status": "Todo", "iteration": "Пізніше"},
+    {"id": "US-08", "title": "US-08 Отримання email-нагадування", "step": "Готово", "size": 1, "value": 6, "depends_on": ["US-04"], "status": "Todo", "iteration": "Пізніше"}
+  ],
+  "project_url": "https://github.com/users/yasemenko17-cpu/projects/1"
 }
