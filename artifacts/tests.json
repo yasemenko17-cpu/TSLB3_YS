@@ -1,0 +1,10 @@
+{
+  "prototype": "prototype/index.html",
+  "sessions": [
+    {"user": "<ЗАПОВНІТЬ користувач 1>", "role": "<ЗАПОВНІТЬ>", "scenario": "K1", "done": true, "minutes": 3, "notes": "<ЗАПОВНІТЬ що спостерігали>"}
+  ],
+  "findings": [
+    {"id": "F1", "session": "<ЗАПОВНІТЬ>", "text": "<ЗАПОВНІТЬ знахідка>", "severity": 2, "status": "заплановано", "fix": "<ЗАПОВНІТЬ>"}
+  ],
+  "conclusions": ["<ЗАПОВНІТЬ висновок 1>"]
+}

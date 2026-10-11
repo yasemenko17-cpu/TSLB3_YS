@@ -1,0 +1,6 @@
+{
+  "_hint": "<ЗАПОВНІТЬ потрібен лише для прототипу з Penpot; для HTML видаліть цей файл і створіть prototype/index.html>",
+  "start": "home",
+  "end": ["done"],
+  "screens": {"home": ["done"], "done": []}
+}
